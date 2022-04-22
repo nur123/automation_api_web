@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+    implementation group: 'io.rest-assured', name: 'rest-assured', version: '4.5.1'
+    implementation group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.13.1'
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.2'
+    implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.1.0'
+    compileOnly 'org.projectlombok:lombok:1.18.22'
+    annotationProcessor 'org.projectlombok:lombok:1.18.22'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.2.3'
+    implementation group: 'com.codepine.api', name: 'testrail-api-java-client', version: '2.0.2'
+
+
+
+    testCompileOnly 'org.projectlombok:lombok:1.18.22'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.22'
+    implementation group: 'com.github.javafaker', name: 'javafaker', version: '1.0.2'
+
+}
+
+test {
+//    useJUnitPlatform()
+}
