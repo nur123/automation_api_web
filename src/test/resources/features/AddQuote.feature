@@ -1,5 +1,5 @@
 Feature: Add Quote
-  @Test
+
   Scenario: Add Quote With Color Yellow
     Given user open add quote page
     When user input quote "Test"
